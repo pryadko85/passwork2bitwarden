@@ -1,0 +1,45 @@
+{
+  "passwords": [
+    {
+      "id": "000000000000000000000001",
+      "tags": ["vpn", "wireguard"],
+      "fields": {
+        "name": "Example WireGuard peer",
+        "login": "",
+        "note": "[Interface]\nPrivateKey = exampleBase64==\nAddress = 10.0.0.2/32",
+        "password": ""
+      },
+      "vaultName": "Example",
+      "vaultId": "0000000000000000000000aa",
+      "path": [
+        {"name": "Client A", "parentId": null, "id": "0000000000000000000000b1", "groupId": "0000000000000000000000aa", "deleted": false},
+        {"name": "WireGuard", "parentId": "0000000000000000000000b1", "id": "0000000000000000000000b2", "groupId": "0000000000000000000000aa", "deleted": false}
+      ],
+      "folderId": "0000000000000000000000b2",
+      "folderName": "WireGuard"
+    },
+    {
+      "id": "000000000000000000000002",
+      "fields": {
+        "name": "Example server",
+        "login": "admin",
+        "url": "192.168.1.10",
+        "note": "ssh only",
+        "custom": [
+          {"name": "Дополнительный логин 1", "value": "deploy", "type": "text"},
+          {"name": "Дополнительный пароль 1", "value": "ChangeMe123!", "type": "password"}
+        ],
+        "password": "ChangeMe123!"
+      },
+      "vaultName": "Example",
+      "vaultId": "0000000000000000000000aa",
+      "path": [
+        {"name": "Client A", "parentId": null, "id": "0000000000000000000000b1", "groupId": "0000000000000000000000aa", "deleted": false},
+        {"name": "Servers", "parentId": "0000000000000000000000b1", "id": "0000000000000000000000b3", "groupId": "0000000000000000000000aa", "deleted": false}
+      ],
+      "folderId": "0000000000000000000000b3",
+      "folderName": "Servers"
+    }
+  ],
+  "vaults": []
+}
